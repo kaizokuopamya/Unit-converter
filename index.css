@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #6943ff;
+  --light-gray: #f4f4f4;
+  --white: #ffffff;
+  --light-black: #3d3d3d;
+  --gray: #5a537b;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+}
+
+.container {
+  width: 34.35rem;
+  height: 47rem;
+  margin: 0 auto;
+}
+
+.input_section {
+  margin-top: 2rem;
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--blue);
+  padding: 2.7rem 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  color: var(--white);
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 2.1rem;
+}
+
+#input-el {
+  width: 7.3rem;
+  height: 5.1rem;
+  outline: none;
+  background-color: transparent;
+  font-size: 4rem;
+  font-weight: 900;
+  padding: 0.8rem;
+  color: var(--white);
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#convert-btn {
+  width: 7.3rem;
+  height: 2.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  margin-top: 0.7rem;
+}
+
+.conversion_section {
+  width: 100%;
+  height: 28rem;
+  padding: 2rem 0;
+  background: var(--light-gray);
+}
+
+.col {
+  width: 31rem;
+  height: 6.75rem;
+  margin: 0 auto;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.conversion-units {
+  padding: 2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  color: var(--light-black);
+}
+
+@media screen and (max-width:34rem) {
+    .container{
+        width: 22rem;
+        height: 25rem;
+    }
+
+    .col{
+        width: 18rem;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    .col{
+        width: 18rem;
+        height: 4rem;
+    }
+    h2{
+        font-size: .8rem;
+    }
+    .conversion_section{
+        height: 20rem;
+    }
+    .conversion-units{
+        padding: 0.5rem;
+    }
+    p{
+        font-size: .6rem;
+    }
+    
+}
